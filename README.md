@@ -30,6 +30,18 @@ pneumonia_detection/
 └── README.md
 ```
 
+
+## Dataset
+
+This project uses the [RSNA Pneumonia Detection Challenge dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data).
+
+**How to download:**
+1. Go to the [Kaggle competition page](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data).
+2. Accept the competition rules and download the dataset files.
+3. Place the downloaded files in the `rsna_data/` directory.
+
+*Note: The dataset is not included in this repository due to size and licensing restrictions.*
+
 ## Setup
 
 ```bash
