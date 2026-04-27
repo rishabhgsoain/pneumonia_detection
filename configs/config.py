@@ -10,18 +10,19 @@ from typing import List, Optional, Tuple
 @dataclass
 class DataConfig:
     """Dataset and preprocessing configuration."""
-    raw_data_dir: str = "./rsna_data"
+    # Dataset is located inside the data/ subfolder
+    raw_data_dir: str = "./data/rsna-pneumonia-detection-challenge"
     processed_dir: str = "./rsna_processed"
     image_dir: str = "./rsna_processed/images"
     train_csv: str = "./rsna_processed/train_split.csv"
     val_csv: str = "./rsna_processed/val_split.csv"
     test_csv: str = "./rsna_processed/test_split.csv"
-    original_csv: str = "./rsna_data/stage_2_train_labels.csv"
+    original_csv: str = "./data/rsna-pneumonia-detection-challenge/stage_2_train_labels.csv"
 
     # Unlabeled data for domain-adaptive pretraining
     unlabeled_dir: str = "./nih_chestxray/images"
 
-    image_size: int = 1024
+    image_size: int = 512  # Reduced from 1024 to fit disk & RAM constraints
     num_workers: int = 4
     pin_memory: bool = True
 

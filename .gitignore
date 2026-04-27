@@ -17,6 +17,7 @@ env/
 rsna_data/
 rsna_processed/
 outputs/
+data/rsna-pneumonia-detection-challenge/
 *.pth
 *.ckpt
 
